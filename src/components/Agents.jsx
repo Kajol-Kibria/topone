@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import List from './List'
-import { getLength, getUsers } from './Data'
+import { getLength, getUsers } from './data'
 
 import { IoClose } from "react-icons/io5";
 import { FiSearch } from "react-icons/fi";
