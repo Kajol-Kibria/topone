@@ -6,7 +6,7 @@ export default function AgentSignIn() {
 
     const [show, setShow]= useState(false);
   return (
-    <div className='fixed right-0 left-0 top-0 bottom-0 z-[1000] text-white bg-[#002062] '>
+    <div className='fixed right-0 left-0 top-0 bottom-0 z-[1000] text-white bg-[#000E28] '>
         <div className='flex items-center justify-center h-screen'>
         <div className=' bg-gray-100/10 px-40 pb-20  rounded-2xl'>
         <div className=' flex items-center justify-center'>

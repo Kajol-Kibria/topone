@@ -42,10 +42,10 @@ export default function SuperAgent() {
           
           
   return (
-    <div className='text-white bg-[#002062] '>
+    <div className='text-white bg-[#000E28] '>
 
       {/* add new popup */}
-      <div className={`${show?'':'hidden'} bg-[#002062] rounded-2xl shadow-xl  w-[70vw] h-[50vh] 2xl:w-[48vw] 2xl:h-[58vh] m-auto px-20 py-16 z-50 fixed top-0 bottom-0 left-0 right-0`}>
+      <div className={`${show?'':'hidden'} bg-[#000E28] rounded-2xl shadow-xl  w-[70vw] h-[50vh] 2xl:w-[48vw] 2xl:h-[58vh] m-auto px-20 py-16 z-50 fixed top-0 bottom-0 left-0 right-0`}>
         <div>
           <div className='mb-10 flex items-center justify-between'>
             <p className='text-2xl font-semibold'>Invite Responders</p>
@@ -59,7 +59,7 @@ export default function SuperAgent() {
               <input className=' placeholder:text-gray-300 w-[330px] h-[35px] bg-gray-200/15 outline-none rounded-md py-2 px-5'/>
               <div className='text-sm py-4'>
                 
-                <button className='font-medium underline'><AiOutlinePlus size={16} className='rounded-[4px] inline mr-2 bg-white text-[#002062]'/>Add new</button>
+                <button className='font-medium underline'><AiOutlinePlus size={16} className='rounded-[4px] inline mr-2 bg-white text-[#000E28]'/>Add new</button>
                 <span className='text-gray-300'> OR </span>
                 <button  onClick={()=>{setMultipleShow(true); setShow(false)}} className='font-medium underline'>Add multiple at once</button>
               </div>
@@ -87,7 +87,7 @@ export default function SuperAgent() {
         </div>
     </div>
       {/* add multiple popup */}
-      <div className={`${multipleShow?'':'hidden'} bg-[#002062] rounded-2xl shadow-xl  w-[70vw] h-[50vh] 2xl:w-[48vw] 2xl:h-[58vh] m-auto px-20 py-16 z-50 fixed top-0 bottom-0 left-0 right-0`}>
+      <div className={`${multipleShow?'':'hidden'} bg-[#000E28] rounded-2xl shadow-xl  w-[70vw] h-[50vh] 2xl:w-[48vw] 2xl:h-[58vh] m-auto px-20 py-16 z-50 fixed top-0 bottom-0 left-0 right-0`}>
         <div className=''>
           <div className='mb-10 flex items-center justify-between'>
             <p className='text-2xl font-semibold'>Invite Responders</p>
@@ -99,7 +99,7 @@ export default function SuperAgent() {
               <textarea className='resize-none placeholder:text-gray-300 w-full h-[116px] bg-gray-200/15 outline-none rounded-md py-2 px-5' />
               <div className='text-sm py-4'>
                 
-                <button onClick={()=>{setMultipleShow(false); setShow(true)}} className='font-medium underline'><AiOutlinePlus size={16} className='rounded-[4px] inline mr-2 bg-white text-[#002062]'/>Add new</button>
+                <button onClick={()=>{setMultipleShow(false); setShow(true)}} className='font-medium underline'><AiOutlinePlus size={16} className='rounded-[4px] inline mr-2 bg-white text-[#000E28]'/>Add new</button>
                 <span className='text-gray-300'> OR </span>
                 <button className='font-medium underline'>Add multiple at once</button>
               </div>
@@ -114,7 +114,7 @@ export default function SuperAgent() {
     </div>
 
       {/* iNVITATION SENT */}
-      <div className={`${invitationSent?'':'hidden'} bg-[#002062] rounded-2xl shadow-xl  w-[70vw] h-[50vh] 2xl:w-[48vw] 2xl:h-[58vh] m-auto px-20 py-16 z-50 fixed top-0 bottom-0 left-0 right-0`}>
+      <div className={`${invitationSent?'':'hidden'} bg-[#000E28] rounded-2xl shadow-xl  w-[70vw] h-[50vh] 2xl:w-[48vw] 2xl:h-[58vh] m-auto px-20 py-16 z-50 fixed top-0 bottom-0 left-0 right-0`}>
         <div className='w-[240px] h-full content-center mx-auto text-center'>
           <p className='text-lg font-medium mb-2'>Invited 106 Responders</p>
           <p className='text-sm mx-6 text-gray-300'>Your inivitation have been sent successfully</p>

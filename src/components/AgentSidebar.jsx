@@ -15,7 +15,8 @@ import { MdDownloadDone } from "react-icons/md";
 import { FaRegSmile } from "react-icons/fa";
 import { PiPaperPlaneRight} from "react-icons/pi";
 
-import { IoMdArrowDropdownCircle } from "react-icons/io";
+
+
 import { IoArrowDown } from "react-icons/io5";
 
 
@@ -104,7 +105,7 @@ export default function AgentSidebar() {
               
             }
             <div className=' flex justify-center '>
-            <button onClick={()=>setSee(true)} className={`${see?'hidden':''} flex items-center  rounded-xl gap-2 bg-[#002062] py-2 my-1 px-6`}>See all<IoArrowDown/></button> 
+            <button onClick={()=>setSee(true)} className={`${see?'hidden':''} flex items-center  rounded-xl gap-2 bg-[#000E28] py-2 my-1 px-6`}>See all<IoArrowDown/></button> 
             </div>
             <div className={`${see?'':'hidden'}`}>
             {notificationArray.map((noti)=>{
@@ -125,7 +126,7 @@ export default function AgentSidebar() {
             })}
           </div>
           <div className={`${see?'':'hidden'} flex justify-center`}>
-          <button onClick={()=>setSee(false)} className='flex items-center  rounded-xl gap-2 bg-[#002062] py-2 my-5 px-6'>See less<IoArrowDown className='rotate-180'/></button>
+          <button onClick={()=>setSee(false)} className='flex items-center  rounded-xl gap-2 bg-[#000E28] py-2 my-5 px-6'>See less<IoArrowDown className='rotate-180'/></button>
           </div>
           </div>
           
@@ -173,6 +174,9 @@ export default function AgentSidebar() {
               </div>
       </div>
     </div>
+
+
+    
         </div>
         <div className={`bg-gray-100/5 rounded-md text-center py-4 px-2' ${see?'hidden':''}`}>
         <div className='flex items-end justify-center py-3'>
@@ -181,7 +185,7 @@ export default function AgentSidebar() {
         </div>
           <p>You have achieved 86% customer&apos;s satisfaction so far</p>
         </div>
-        <div className={`bg-[#002062] rounded-md space-y-4 p-4 mt-6 2xl:mt-3' ${see?'hidden':''}`}>
+        <div className={`bg-[#000E28] rounded-md space-y-4 p-4 mt-6 2xl:mt-3' ${see?'hidden':''}`}>
         <h1 className='text-lg font-normal'>Reports</h1>
         <div className='flex items-center gap-4'>
           <div>
@@ -189,7 +193,7 @@ export default function AgentSidebar() {
           <div style={{background: `conic-gradient(#71DDB1 ${3.6*80}deg, #6b6b6b65 10deg )`}} className=' flex items-center justify-center w-12 h-12 rounded-full'>
           </div>
           
-          <div className='bg-[#002062] absolute w-10 h-10 rounded-full'></div>
+          <div className='bg-[#000E28] absolute w-10 h-10 rounded-full'></div>
           </div>
           </div>
           <div>
@@ -203,7 +207,7 @@ export default function AgentSidebar() {
           
           <div style={{background: `conic-gradient(#3FBDF1 ${3.6*78}deg, #6b6b6b65 10deg )`}} className=' bg-[#3FBDF1] flex items-center justify-center w-12 h-12 rounded-full'>
           </div>
-          <div className='bg-[#002062] absolute w-10 h-10 rounded-full'></div>
+          <div className='bg-[#000E28] absolute w-10 h-10 rounded-full'></div>
           </div>
           <div>
             <p className='text-sm'>Response Rate</p>
