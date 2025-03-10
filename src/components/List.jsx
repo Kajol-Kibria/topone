@@ -9,7 +9,7 @@ export default function List(props) {
    
   return (
     <div>
-        <div className='text-sm bg-gray-100/10 h-[55vh] border border-gray-200/40 rounded-t-xl  overflow-auto example'>
+        <div className='text-sm bg-gray-100/10  2xl:h-[55vh] border border-gray-200/40 rounded-t-xl  overflow-auto example'>
         <table className="w-full">
             <thead>
                 <tr className='text-gray-200   border-gray-200/40'>

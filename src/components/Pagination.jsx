@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Pagination(props) {
   return (
-    <div className=''>
+    <div className='mb-10 2xl:mb-0'>
         
         <div className="flex justify-between bg-gray-100/10 rounded-b-xl p-4 border border-gray-200/40">
   <button onClick={()=> props.onPageChange('Previous')} className="join-item border bg-gray-100/10 text-sm border-gray-200/60 rounded-md px-3 py-1">Previous</button>

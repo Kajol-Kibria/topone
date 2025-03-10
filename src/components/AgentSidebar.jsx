@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 
 import { HiBell } from "react-icons/hi";
-import img from '../../public/pro.png'
+import img from '../../public/mtnlogo.png'
 import img2 from '../../public/parcent.png'
 import { IoNotificationsOutline } from "react-icons/io5";
 
@@ -69,8 +69,8 @@ export default function AgentSidebar() {
 
 
   return (
-    <div className=' p-6 w-[330px] bg-gray-100/10  h-screen absolute top-0 right-0 text-sm'>
-        <div className='flex items-center justify-between 2xl:pb-3 pb-4'>
+    <div className=' 2xl:pb-6 2xl:px-6 pb-3 px-5 w-[330px] bg-gray-100/10 overflow-auto h-screen absolute top-0 right-0 text-sm'>
+        <div className='flex items-center justify-between h-[103px]'>
           <div>
           <IoNotificationsOutline onClick={()=>setSee(!see)} className='text-gray-300 cursor-pointer' size={28}/>               
           </div>
@@ -83,12 +83,12 @@ export default function AgentSidebar() {
               </div>
             </NavLink>
             
-            <img className='border rounded-full w-14 h-14 p-2 object-cover'  src={img}/>
+            <img className=' rounded-full w-14 h-14  object-cover'  src={img}/>
           </div>
         </div>
         
         <div className=''>
-          <h1 className='border-t border-gray-200/60 text-xl py-7 2xl:py-3 font-normal'>Notifications</h1>
+          <h1 className='border-t border-gray-200/60 text-xl pt-2 2xl:py-3 font-normal'>Notifications</h1>
           <div className=''>
             {<div className={`${see?'hidden':''}`}>
                   <div className='  py-2  flex items-start gap-5'>
@@ -105,7 +105,7 @@ export default function AgentSidebar() {
               
             }
             <div className=' flex justify-center '>
-            <button onClick={()=>setSee(true)} className={`${see?'hidden':''} flex items-center  rounded-xl gap-2 bg-[#000E28] py-2 my-1 px-6`}>See all<IoArrowDown/></button> 
+            <button onClick={()=>setSee(true)} className={`${see?'hidden':''} flex items-center  rounded-md 2xl:rounded-xl gap-2 bg-[#000E28] py-2 mt-2  px-6 text-xs 2xl:text-sm`}>See all<IoArrowDown/></button> 
             </div>
             <div className={`${see?'':'hidden'}`}>
             {notificationArray.map((noti)=>{
@@ -126,17 +126,17 @@ export default function AgentSidebar() {
             })}
           </div>
           <div className={`${see?'':'hidden'} flex justify-center`}>
-          <button onClick={()=>setSee(false)} className='flex items-center  rounded-xl gap-2 bg-[#000E28] py-2 my-5 px-6'>See less<IoArrowDown className='rotate-180'/></button>
+          <button onClick={()=>setSee(false)} className='flex items-center rounded-md 2xl:rounded-xl gap-2 bg-[#000E28] py-2 mt-2  px-6 text-xs 2xl:text-sm'>See less<IoArrowDown className='rotate-180'/></button>
           </div>
           </div>
           
           
         </div>
-        <div className={`${see?'hidden':''}`}>
-        <h1 className='py-7 2xl:py-3 text-xl font-normal'>Send Notification</h1>
-        <div className='grid items-center bg-gray-100/10 rounded-md mb-6 2xl:mb-3'>
+        <div className={``}>
+        <h1 className='py-2 2xl:py-3 text-xl font-normal'>Send Notification</h1>
+        <div className='grid items-center bg-gray-100/10 rounded-md mb-3'>
           <textarea
-          className='placeholder:text-[14px] px-4 bg-transparent  w-full resize-none pt-[14px] pb-[50px] text-white outline-none'
+          className='placeholder:text-[14px] px-4 bg-transparent  w-full resize-none pt-[14px] pb-[35px] 2xl:pb-[50px] text-white outline-none'
           value={inputStr}
           onChange={(e) => setInputStr(e.target.value)}
           placeholder='Start typing.. '  type='text'/>
@@ -178,14 +178,14 @@ export default function AgentSidebar() {
 
     
         </div>
-        <div className={`bg-gray-100/5 rounded-md text-center py-4 px-2' ${see?'hidden':''}`}>
+        <div className={`bg-gray-100/5 rounded-md text-center 2xl:py-4 py-2 px-2' `}>
         <div className='flex items-end justify-center py-3'>
           <img src={img2}/>
           <p className='absolute text-2xl font-semibold'>86%</p>
         </div>
           <p>You have achieved 86% customer&apos;s satisfaction so far</p>
         </div>
-        <div className={`bg-[#000E28] rounded-md space-y-4 p-4 mt-6 2xl:mt-3' ${see?'hidden':''}`}>
+        <div className={`bg-[#000E28] rounded-md space-y-4 p-4 mt-3 `}>
         <h1 className='text-lg font-normal'>Reports</h1>
         <div className='flex items-center gap-4'>
           <div>

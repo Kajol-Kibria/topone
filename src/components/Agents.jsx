@@ -42,7 +42,7 @@ export default function SuperAgent() {
           
           
   return (
-    <div className='text-white bg-[#000E28] '>
+    <div className='text-white bg-[#000E28]'>
 
       {/* add new popup */}
       <div className={`${show?'':'hidden'} bg-[#000E28] rounded-2xl shadow-xl  w-[70vw] h-[50vh] 2xl:w-[48vw] 2xl:h-[58vh] m-auto px-20 py-16 z-50 fixed top-0 bottom-0 left-0 right-0`}>
@@ -125,7 +125,7 @@ export default function SuperAgent() {
 
 
         <AgentTopbar/>
-        <div className='mr-[350px] xl:ml-10 2xl:ml-24'>
+        <div className='mr-[350px] xl:ml-10 2xl:ml-24 example'>
         <div>
         <div className='bg-gray-100/10 rounded-xl w-full mb-3 '>
         <p className='px-6 py-3'>MTN Nigeria</p>
