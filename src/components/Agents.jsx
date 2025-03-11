@@ -12,6 +12,7 @@ import { GiSwapBag } from "react-icons/gi";
 import Pagination from './Pagination';
 import AgentTopbar from './AgentTopbar';
 import AgentSidebar from './AgentSidebar';
+import { NavLink } from 'react-router';
 
 
 
@@ -139,6 +140,7 @@ export default function SuperAgent() {
                     <p className='font-bold 2xl:text-3xl text-2xl'>3478</p>
                     </div>
             </div>
+            <NavLink to='/tickets'>
             <div className='flex items-center justify-between gap-4 2xl:gap-8 h-[100px] bg-gray-100/15 rounded-xl'>
                     <div className='2xl:ml-6 ml-3 w-[5vw] h-[47px] flex items-center justify-center rounded-full  bg-[#1A4FBA]'><BsFillQuestionCircleFill size={25}/></div>
                     <div className='w-[9vw] space-y-1'>
@@ -146,6 +148,7 @@ export default function SuperAgent() {
                     <p className='font-bold 2xl:text-3xl text-2xl'>18M</p>
                     </div>
             </div>
+            </NavLink>
             <div className='flex items-center justify-between gap-4 2xl:gap-8 h-[100px] bg-gray-100/15 rounded-xl'>
                     <div className='2xl:ml-6 ml-3 w-[5vw] h-[47px] flex items-center justify-center rounded-full  bg-[#71DDB1]'><MdAccessTimeFilled size={25}/></div>
                     <div className='w-[9vw] space-y-1'>
